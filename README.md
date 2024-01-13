@@ -2,6 +2,7 @@ TestCases and Result:
 1)Check whether the Product is Created with name, description, price, and can have multiple variants
 
 **API:** http://localhost:8000/api/v1/product/create
+
 **Product name:** shirt
 **Description:** Men Solid Crew Neck T-shirt
 **Price:** 1200
