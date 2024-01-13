@@ -5,7 +5,7 @@ main().catch((err) => console.log(err));
 
 //to connect mongodb using url
 async function main() {
-  await mongoose.connect("mongodb://localhost:27017/E_Commerce_System");
+  await mongoose.connect("mongodb+srv://rajithsuvarna4:2xgdFE2Pp0yAmzmC@cluster0.402pmdi.mongodb.net/");
 }
 
 const db = mongoose.connection;
