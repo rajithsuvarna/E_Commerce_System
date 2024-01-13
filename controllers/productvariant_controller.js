@@ -2,7 +2,7 @@
 const Product = require("../models/product");
 const Productvariant = require("../models/productvariant");
 
-//For creating the options
+//For creating the Product variants
 module.exports.create = async function (req, res) {
   try {
     const opt = await Productvariant.create({
@@ -41,7 +41,7 @@ module.exports.delete = async function (req, res) {
       });
       await Productvariant.findByIdAndDelete(req.params.id);
 
-      res.send("Option deleted");
+      res.send("Product variant deleted");
     } else {
       res.send("Id not exists");
     }

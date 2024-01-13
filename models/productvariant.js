@@ -1,3 +1,4 @@
+//model to create product variants
 const mongoose = require("mongoose");
 
 const productvariantSchema = new mongoose.Schema({

@@ -3,8 +3,8 @@ const express = require("express");
 const router = express.Router();
 const productvariantController = require("../../../controllers/productvariant_controller");
 
+//get,post delete methods for product variants
 router.post("/:id/create", productvariantController.create);
-//router.get("/:id/add_vote", optionsController.add_vote);
 router.delete("/delete/:id", productvariantController.delete);
 
 //exporting

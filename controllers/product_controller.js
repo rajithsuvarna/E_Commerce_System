@@ -2,7 +2,7 @@
 const Product = require("../models/product");
 const Productvariant = require("../models/productvariant");
 
-//For creating the questions
+//For creating the Products
 module.exports.create = async function (req, res) {
   try {
     let product = await Product.create(req.body);
@@ -13,16 +13,16 @@ module.exports.create = async function (req, res) {
   }
 };
 
-//To delete a perticular Question and associated options by its Id
+//To delete a perticular Products and associated Products variants by its Id
 module.exports.deleteQues = async function (req, res) {
   try {
     const product = await Product.findById(req.params.id).clone();
     if (product) {
       await Product.deleteOne(req.params.id).clone();
       await Productvariant.deleteMany({ product: req.params.id }).clone();
-      res.send("Question deleted");
+      res.send("Product deleted");
     } else {
-      res.send("Question does not exists");
+      res.send("Product does not exists");
     }
   } catch (err) {
     console.log(err);
@@ -30,7 +30,7 @@ module.exports.deleteQues = async function (req, res) {
   }
 };
 
-//For showing the question by its id
+//For showing the Products by its id
 module.exports.showProduct = async function (req, res) {
   try {
     const product = await Product.findById(req.params.id).populate(
@@ -47,6 +47,7 @@ module.exports.showProduct = async function (req, res) {
   }
 };
 
+//To show all the Products
 module.exports.showAllProducts = async function (req, res) {
   try {
     const product = await Product.find({}).populate("productvariants");
@@ -61,6 +62,7 @@ module.exports.showAllProducts = async function (req, res) {
   }
 };
 
+//To search the products by name, description, and variant name
 module.exports.Search = async function (req, res) {
   try {
     const product = await Product.find({
@@ -70,7 +72,6 @@ module.exports.Search = async function (req, res) {
         { variantnames: { $regex: req.params.key } },
       ],
     }).populate("productvariants");
-
     if (product) {
       res.send(product);
     } else {
