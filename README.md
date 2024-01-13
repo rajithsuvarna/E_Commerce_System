@@ -1,3 +1,38 @@
+To run the project use
+npm start
+
+Project Description:
+This Project is to create API for E-commerce-system project.By Using below mentioned API's we can create Products and Product variants, Delete Product and product variants, and also we can Retrieve theProducts
+
+**To create Products:**
+
+**API:** http://localhost:8000/api/v1/product/create
+
+**To create Product Variant for the mentioned Product id:**
+
+**API:** http://localhost:8000/api/v1/product/productvariant/:id/create
+
+**To delete Product:**
+
+**API**: http://localhost:8000/api/v1/productvariant/delete/:id
+
+**To delete Product Variants:**
+
+**API**: http://localhost:8000/api/v1/product/delete/:id
+
+**To display Product using ID:**
+
+
+**To display all The Product:**
+
+**API**: http://localhost:8000/api/v1/product/viewall
+
+**To Search by Product name,Description, Variant Name:**
+
+**API**:http://localhost:8000/api/v1/product/search/:key
+
+
+---------------------------------------------------------------------------------------------------------------
 **Test Cases and Result:**
 
 **1)Check whether the Product is Created with name, description, price, and can have multiple variants**
@@ -46,7 +81,7 @@
 
 **Result**: Products Deleted Successfully
 
-**4)Check whether all the Products displayed with all the Product variants associated to it**
+**5)Check whether all the Products displayed with all the Product variants associated to it**
 
 **API**: http://localhost:8000/api/v1/product/viewall
 
@@ -54,7 +89,7 @@
 
 **Result**:All Products displayed Successfully
 
-**5)Check whether we are able to search by product name, description, product variant name**
+**6)Check whether we are able to search by product name, description, product variant name**
 
 **Using Product name**
 
