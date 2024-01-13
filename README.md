@@ -4,7 +4,9 @@ TestCases and Result:
 **API:** http://localhost:8000/api/v1/product/create
 
 **Product name:** shirt
+
 **Description:** Men Solid Crew Neck T-shirt
+
 **Price:** 1200
 
 ![image](https://github.com/rajithsuvarna/E_Commerce_System/assets/109891044/00c1b8dc-0bd7-448d-bcdd-60db6841fb3e)
