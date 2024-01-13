@@ -52,6 +52,8 @@ This project aims to develop a robust API for an E-commerce system. The API prov
 
 **Result:** Product created with required details
 
+---------------------------------------------------------------------------------------------------------------------
+
 **2)Check whether the Product Variants are Created with  name, SKU, additional cost and stock count.**
 
 **API:** http://localhost:8000/api/v1/product/productvariant/:id/create
@@ -68,6 +70,8 @@ This project aims to develop a robust API for an E-commerce system. The API prov
 
 **Result**: Product Variants created with required details
 
+------------------------------------------------------------------------------------------------------------------------
+
 **3)Check whether the Product Variant Deleted or not**
 
 **API**: http://localhost:8000/api/v1/productvariant/delete/:id
@@ -75,6 +79,8 @@ This project aims to develop a robust API for an E-commerce system. The API prov
 ![image](https://github.com/rajithsuvarna/E_Commerce_System/assets/109891044/d6bf66fb-73bb-465a-92c8-b4bc85857b03)
 
 **Result**: Product Variant Deleted Successfully
+
+-------------------------------------------------------------------------------------------------------------------------
 
 **4)Check whether the Product Deleted with all the Product variants associated to it**
 
@@ -84,6 +90,8 @@ This project aims to develop a robust API for an E-commerce system. The API prov
 
 **Result**: Products Deleted Successfully
 
+---------------------------------------------------------------------------------------------------------------------
+
 **5)Check whether all the Products displayed with all the Product variants associated to it**
 
 **API**: http://localhost:8000/api/v1/product/viewall
@@ -91,6 +99,8 @@ This project aims to develop a robust API for an E-commerce system. The API prov
 ![image](https://github.com/rajithsuvarna/E_Commerce_System/assets/109891044/b5715d0c-062e-472d-9beb-58b1d1d182c6)
 
 **Result**:All Products displayed Successfully
+
+--------------------------------------------------------------------------------------------------------------------
 
 **6)Check whether we are able to search by product name, description, product variant name**
 
