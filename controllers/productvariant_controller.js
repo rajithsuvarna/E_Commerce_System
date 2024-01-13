@@ -19,7 +19,7 @@ module.exports.create = async function (req, res) {
       product.productvariants.push(updateOpt);
       product.variantnames.push(updateOpt.variant_name);
       product.save();
-      res.send(product);
+      return res.send(product);
     } else {
       res.send("Product does not exists");
     }
