@@ -1,8 +1,10 @@
 To run the project use
-npm start
 
-Project Description:
-This Project is to create API for E-commerce-system project.By Using below mentioned API's we can create Products and Product variants, Delete Product and product variants, and also we can Retrieve theProducts
+**npm start**
+
+**Project Description:**
+
+This project aims to develop a robust API for an E-commerce system. The API provides essential functionalities, allowing users to seamlessly create new products and product variants, delete existing products and their variants, and retrieve comprehensive product information. This set of APIs empowers developers to efficiently manage and organize the product catalog within the E-commerce system, contributing to a seamless and dynamic user experience.
 
 **To create Products:**
 
