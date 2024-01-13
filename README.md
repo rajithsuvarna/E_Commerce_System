@@ -35,7 +35,10 @@ This project aims to develop a robust API for an E-commerce system. The API prov
 **API**:http://localhost:8000/api/v1/product/search/:key
 
 ---------------------------------------------------------------------------------------------------------------
-**POSTMAN:**https://bold-water-626360.postman.co/workspace/New-Team-Workspace~9544da7b-214c-431e-a820-317f92d3cbb2/request/23836321-6c446e6c-d61e-4717-8e96-491075c0c9d7
+**POSTMAN:**
+
+https://bold-water-626360.postman.co/workspace/New-Team-Workspace~9544da7b-214c-431e-a820-317f92d3cbb2/request/23836321-6c446e6c-d61e-4717-8e96-491075c0c9d7
+
 ---------------------------------------------------------------------------------------------------------------
 **Test Cases and Result:**
 
