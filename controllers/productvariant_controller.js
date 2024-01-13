@@ -38,6 +38,7 @@ module.exports.delete = async function (req, res) {
       const productId = productvariant.product;
       const product = await Product.findByIdAndUpdate(productId, {
         $pull: { productvariants: req.params.id },
+        $pull: { variantnames: productvariant.variant_name },
       });
       await Productvariant.findByIdAndDelete(req.params.id);
 
