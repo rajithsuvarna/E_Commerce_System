@@ -24,6 +24,7 @@ This project aims to develop a robust API for an E-commerce system. The API prov
 
 **To display Product using ID:**
 
+**API:** http://localhost:8000/api/v1/product/view/:id
 
 **To display all The Product:**
 
