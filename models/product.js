@@ -13,7 +13,8 @@ const productSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  productvariant: [
+  variantnames: [{ type: String }],
+  productvariants: [
     {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Productvariant",

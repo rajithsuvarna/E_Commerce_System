@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const productvariantSchema = new mongoose.Schema({
-  productvariant: {
+  variant_name: {
     type: String,
     required: true,
   },

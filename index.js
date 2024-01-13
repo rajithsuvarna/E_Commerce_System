@@ -2,9 +2,13 @@
 const express = require("express");
 //setting port value 8000
 const port = 8000;
+
+//using body parser
+const bodyParser = require("body-parser");
 const db = require("./config/mongoose");
 const app = express();
 
+app.use(bodyParser.urlencoded({ extended: true }));
 //using middleware
 app.use("/", require("./routes/index"));
 
